@@ -71,7 +71,7 @@ html, body, .block {
 }
 
 .linkedin {
-  background-color: #0077b5;
+  background-color: #0077b5!important;
 }
 
 .angellist:hover {
@@ -79,7 +79,7 @@ html, body, .block {
 }
 
 .github {
-  background-color: black;
+  background-color: black!important;
 }
 
 /* Buttons - Read Me, Contact Us */
@@ -249,7 +249,7 @@ ul.side-nav li {
 
 ul.side-nav.fixed a {
   box-sizing: content-box;
-  color: rgb(16, 202, 56);
+  /* color: black; */
   display: block;
   line-height: 100%;
   padding: 12px 0 15px;
@@ -509,6 +509,26 @@ h4 {
   margin-left: 10px;
   color: white;
 }
+.card .tags{
+    z-index: 2;
+    color: white;
+    position: relative;
+    top: -15%;
+    background: rgb(48, 48, 48,0.5);
+    height: 15%;
+    padding: 5px;
+    display: flex;
+    font-size:small;
+    line-height: 100%;
+}
+
+.card .tags .tag{
+    background: rgb(48, 48, 48,0.9);
+    margin: 0 5px;
+    padding: 5px 5px;
+    border: black solid 2px ;
+    border-radius: 5px;
+}
 
 a.hoverline {
   border-bottom: 3px solid transparent !important;
@@ -546,6 +566,16 @@ a.hoverline:hover {
   vertical-align: middle;
   display: table-cell;
 }
+
+#skills .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+#skills .list .row{
+    width: 50%!important;
+  }
+
+
 
 .card.large .card-content p {
   color: inherit;
@@ -704,7 +734,7 @@ small {
   }
   h4, .container {
     position: relative;
-    top: 64px;
+    /* top: 64px; */
   }
   section#intro {
     margin-bottom: -64px;
