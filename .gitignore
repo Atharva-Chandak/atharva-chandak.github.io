@@ -1,1 +1,35 @@
+# Python / virtual environments
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
 
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# IDEs & editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.suo
+
+# Node (if ever used locally for tooling)
+node_modules/
+npm-debug.log*
+
+# Build / temp artifacts
+dist/
+tmp/
+*.log
+
+# Private / sensitive files — never commit these
+*.pem
+*.key
+*.env
+.env.*

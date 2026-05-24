@@ -1,1009 +1,482 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
-  <meta name="author" content="Atharva Chandak">
-  <meta name="description" content="Atharva Chandak - I am interested in Deep Learning for Computer Vision, Multi-modal Learning & Robotic Vision.">
-  <link rel="alternate" hreflang="en-us" href="https://atharva-chandak.github.io/">
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Atharva Chandak">
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "author": {
-        "@type": "Person",
-        "name": "Atharva Chandak"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://atharva-chandak.github.io/#y{search_term_string}",
-        "query-input": "required name=search_term_string"
-      },
-      "description": "Atharva Chandak - I am interested in Artificial Intelligence(AI), Machine Learning (ML), Deep Learning(DL) for Computer & Robotic Vision",
-      "url": "https://atharva-chandak.github.io/"
-    }
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharva Chandak | ML Engineer</title>
+    <meta name="description"
+        content="Portfolio of Atharva Chandak, ML Engineer 2 at eBay, specializing in AI, Deep Learning, and Full Stack Development.">
 
-  <!-- Materialize - Compiled and minified CSS-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-  <!-- Font Awesome Icon - CSS-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-  <!-- Custom Styles-->
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <title>Atharva Chandak</title>
+    <!-- Google Fonts: Inter and Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
 
-  <!-- Open Graph-->
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Atharva Chandak" />
-  <meta property="og:description" content="Atharva Chandak personal website" />
-  <meta property="og:url" content="https://atharva-chandak.github.io/" />
-  <meta property="og:site_name" content="Atharva Chandak" />
-  <meta property="article:publisher" content="https://atharva-chandak.github.io/" />
-  <meta property="og:image" content="https://atharva-chandak.github.io/examples/preview.jpg" />
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QZ0TMR4RJ9"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-QZ0TMR4RJ9');
-  </script>
+    <!-- Devicon for Tech Stack Logos -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-  <h1 hidden> Atharva Chandak personal website describing his experiences, roles, education universities, blog, github codes and others!</h1>
-  <!-- Navigation Menu-->
-  <!-- Nav class 1 -->
-  <nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
+    <!-- Abstract Background -->
+    <div class="bg-gradient"></div>
+    <div class="glass-overlay"></div>
 
-      <li class="logo">
-        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-          class="brand-logo grey-blue-text">
-          <img src="./assets/img/Atharva.jpg" class="circle img-responsive profile-pic" alt="Atharva Chandak">
-        </a>
-      </li>
-      <li>
-        <div class="center image-label" style="font-size:25px">Atharva Chandak</div>
-        <div class="center image-label" style="color:rgba(255, 255, 255, 0.5)">Software Engineer </div>
-        <div class="center image-label" style="border-bottom: 1px solid #fff; margin-bottom: 10px;padding-bottom: 10px;" >
-            <a href="https://www.wellsfargo.com/" style="all: revert;color: #6A98F0;text-decoration: none;" onMouseOver="this.style.borderBottom='1px solid #6A98F0'" onMouseOut="this.style.borderBottom='none'" >Wells Fargo</a> 
+    <nav class="navbar">
+        <a href="#" class="logo gradient-text-1"></a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="./Atharva_Chandak_Resume.pdf" target="_blank" class="btn btn-outline">Resume</a>
         </div>
+        <div class="mobile-menu-toggle"><i class="fas fa-bars"></i></div>
+    </nav>
 
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#intro" class="waves-effect waves-dark teal-text">
-            <i class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-
-      <li class="bold">
-        <!-- mdi-av-web small
-             mdi-av-my-library-books small-->
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        mdi-action-assessment
-        mdi-social-poll
-        mdi-av-equalizer
-        -->
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-        <!-- <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li> -->
-
-      <li class="bold">
-        <!-- 
-        1. mdi-communication-contacts
-        2. mdi-content-mail
-        3. mdi-communication-email
-        -->
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        1. mdi-action-description
-        2. mdi-file-folder
-        3. mdi-file-folder-open
-        4. mdi-file-attachment
-        5. mdi-file-folder-shared
-        -->
-        <!-- <a aria-label="Open Atharva's resume in a new tab" href="#resume" target="_blank"
-          onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
-        <a aria-label="Open CV in a new tab" href="./Atharva_Chandak_CV.pdf" target="_blank"
-        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>CV</span></a>  
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Nav class 2 -->
-  <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">
-        Atharva Chandak
-      </a><span class="white-text">(BITS Pilani)</span>
-    </div>
-  </nav>
-
-  <!-- Nav class 3 -->
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
-      <li class="bold active" >
-        <a aria-label="Navigate to the About section" href="#intro" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-
-      <!-- <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li> -->
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Open Atharva's CV in a new tab" href="./Aharva_Chandak_Resume.pdf" class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume/span></a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Main Content-->
-  <main>
-    <!-- First Section: Heading lines and image -->
-    <section id="intro" class="section scrollspy full-height">
-      <!-- <div class="overlay"></div> -->
-      <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2>Hi! I'm <span class="teal">Atharva Chandak</span></h2>
-              <h5 style="color:#fff">My research interests include <span class="typing" style="font-weight: 300; color:#6A98F0"></span></h5>
-              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-              <!-- <h5>Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving a complex and challenging real-world problems.</h5> -->
-              <p>
-                I'm a software engineer at Wells Fargo, working across full-stack development and AI-driven solutions. My background includes research in autonomous systems, continual learning, and robotics at places like Mila, Harvard, and IISc.
-              </p>
-              
-              <p>
-                I focus on building wide range of research and industrially scalable, real-world AI applications - whether it's optimizing machine learning models, designing intelligent chatbots, or improving object detection for robotics. This site is a collection of my work, projects, and research.
-              </p>
-              <p>
-                If you're into Deep Learning, AI, software, or just solving interesting problems, let's connect and build something remarkable!
-              </p>
-              <!-- <p>
-                <strong>Current Focus</strong>:&nbsp;<a aria-label="Navigate to the Inclusive Design Patterns homepage"
-                  href="https://www.smashingmagazine.com/inclusive-design-patterns/">Accessibility</a>&nbsp;//&nbsp;<a
-                  aria-label="Navigate to the Full Stack React homepage"
-                  href="https://www.fullstackreact.com/">React</a>&nbsp;//&nbsp;<a
-                  aria-label='Navigate to the article "Scalable CSS"'
-                  href="https://mrmrs.github.io/writing/2016/03/24/scalable-css/">Design Systems</a>
-                </p> -->
-            </div>
-            <div class="social">
-              <a href="https://www.linkedin.com/in/atharva-chandak" target="_blank">
-                <button class="icon-btn linkedin">
-                  <i class="fa fa-linkedin"></i>
-                </button>
-              </a>
-              <a href="https://github.com/atharva-chandak" target="_blank">
-                <button class="icon-btn github">
-                  <i class="fa fa-github"></i>
-                </button>
-              </a>
-
-              <a href="https://twitter.com/atharva2chandak" target="_blank">
-                <button class="icon-btn twitter" style="background:rgb(29, 161, 242)">
-                    <i class="fa fa-twitter"></i>
-                  </button>
-              </a>
-            </div>
-            <div class='buttons'>
-              <!-- <a href="#about" class="contactme">Read More</a> -->
-              <a href="./Atharva_Chandak_Resume.pdf" class="contactme" target="_blank">Resume</a>
-              <a href="#contact" class="contactme">Contact Me</a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Second Section: Experience -->
-    <section id="experience" class="section scrollspy">
-      <h4 class="page-title white-text teal pushpin" data-target="experience">Experience</h4>
-      <div class="container" id="container">
-
-        <!-- Latest Experience -->
-        
-        <div class="card">
-          <div class="card-content">
-              <div class="row">
-                  <div class="col s12 m2">
-                  <a href="https://wellsfargo.com/" target="_blank"><img alt="WF logo"
-                      src="./assets/img/WellsFargo_Logo.png" class="responsive-img center-block" /></a>
-  
-                  </div>
-  
-                  <div class="col s12 m7">
-                  <p>
-                      <span class="card-title"><a href="https://wellsfargo.com/" target="_blank"
-                          class="teal-text hoverline">Wells Fargo</a></span>
-                  </p>
-                  </div>
-              </div>
-              <div class="role whitesmoke-text text-darken-2">(Software Engineer)</div>
-              <div class="card-action">
-                  <span>August 2023 - PRESENT</span>
-                  </div>
-              <ul>
-                <li>
-                  Full-stack developer using Spring Boot and React to support 18k+ merchants offering Private Label Credit Cards & Loans.
-                </li>
-                <li>
-                  Building API services for Point of Sale EMIs to enable convenient payment for customers.
-                </li>
-                <li>
-                  Prototyping a secure and scalable personalized chatbot for merchants to help simplify UX and increase engagement.
-                </li>
-                  <!-- <b>Tools:</b> Scikit-Learn, OpenCV, Pytorch -->
-              </ul>
-          </div>
-          
-        </div>
-      
-        <div class="card">
-            <div class="card-content">
-                <div class="row">
-                    <div class="col s12 m2">
-                    <a href="https://mila.quebec/en/" target="_blank"><img alt="Mila logo"
-                        src="./assets/img/Mila_LOGO.png" class="responsive-img center-block" /></a>
-    
-                    </div>
-    
-                    <div class="col s12 m7">
-                    <p>
-                        <span class="card-title"><a href="https://mila.quebec/en/" target="_blank"
-                            class="teal-text hoverline">Mila/Robotics@UdeM </a></span>
-                    </p>
-                    </div>
-                </div>
-                <div class="role whitesmoke-text text-darken-2">(Research Intern)</div>
-                <div class="card-action">
-                    <span>January 2023 - Present</span>
-                    </div>
-                <ul>
-                    <li>
-                      Pursued autonomous driving focused Continual Object Detection as part of undergraduate thesis.
-                    </li>                    
-                    <li>
-                      Proposed new approaches for on-device Domain-Incremental Object Detection for robotic applications.
-                    </li>                    
-                    <li>
-                      Achieved a domain incremental avg mAP50 of 68.63 and mAP of 43.89 on the CLAD-D dataset.
-                    </li>                    
-                    <!-- <b>Tools:</b> Scikit-Learn, OpenCV, Pytorch -->
-                </ul>
-            </div>
-            
-          </div>
-        
-          <div class="card">
-            <div class="card-content">
-                <div class="row">
-                    <div class="col s12 m2">
-                    <a href="https://theairlab.org/" target="_blank"><img alt="Airlab logo"
-                        src="./assets/img/Airlab.png" class="responsive-img center-block" /></a>
-    
-                    </div>
-    
-                    <div class="col s12 m7">
-                    <p>
-                        <span class="card-title"><a href="https://theairlab.org/" target="_blank"
-                            class="teal-text hoverline">Airlab, CMU </a></span>
-                    </p>
-                    </div>
-                </div>
-                <div class="role whitesmoke-text text-darken-2">(Collaborator)</div>
-                <div class="card-action">
-                    <span>August 2022 - December 2022</span>
-                    </div>
-                <ul>
-                    <li>
-                      Worked on long-range detection and tracking of aerial vehicles to autonomously avoid collisions.                    
-                    </li>
-                    <li>
-                      Analysed a new dataset for allowing building better models robust to out of distribution climatic conditions.                    
-                    </li>
-                    <li>
-                      Designed optimized models for real-time usage on the drone capturing high resolution feed from multiple cameras.
-                    </li>
-                    
-                    <!-- <b>Tools:</b> Scikit-Learn, OpenCV, Pytorch -->
-                </ul>
-            </div>
-            
-          </div>
-        
-          <div class="card">
-            <div class="card-content">
-                <div class="row">
-                    <div class="col s12 m2">
-                    <a href="https://wellsfargo.com/" target="_blank"><img alt="WF logo"
-                        src="./assets/img/WellsFargo_Logo.png" class="responsive-img center-block" /></a>
-    
-                    </div>
-    
-                    <div class="col s12 m7">
-                    <p>
-                        <span class="card-title"><a href="https://wellsfargo.com/" target="_blank"
-                            class="teal-text hoverline">Wells Fargo </a></span>
-                    </p>
-                    </div>
-                </div>
-                <div class="role whitesmoke-text text-darken-2">(Intern)</div>
-                <div class="card-action">
-                    <span>May 2022 - July 2022</span>
-                    </div>
-                <ul>
-                  <li>
-                    Conceptualized and created an end-to-end AI enabled speech chatbot for answering user home lending queries.
-                  </li>
-                  <li>
-                    Integrated speech-to-text and text-to-speech APIs for allowing speech interaction with the bot.
-                  </li>
-                  <li>
-                    Implemented NLP pipeline for intent and entity extraction and achieved an F1 scores of 93.4% and 83.5% respectively.
-                  </li>
-                  <li>
-                   Authored the action server to process the user request demands and response curation for replying back to user.
-                  </li>
-                    <!-- <b>Tools:</b> Scikit-Learn, OpenCV, Pytorch -->
-                </ul>
-            </div>
-            
-          </div>
-        
-        <!-- Experience 2 -->        
-        <div class="card">
-            <div class="card-content">
-                <div class="row">
-                    <div class="col s12 m2">
-                    <a href="https://vcg.seas.harvard.edu/" target="_blank"><img alt="VCG logo"
-                        src="./assets/img/VCG.png" class="responsive-img center-block" /></a>
-    
-                    </div>
-    
-                    <div class="col s12 m7">
-                    <p>
-                        <span class="card-title"><a href="https://vcg.seas.harvard.edu/" target="_blank"
-                            class="teal-text hoverline">Visual Computing Group, Harvard </a></span>
-                    </p>
-                    </div>
-                </div>
-                <div class="role whitesmoke-text text-darken-2">(Visiting Research Intern)</div>
-                <div class="card-action">
-                    <span>January 2022 - May 2022</span>
-                    </div>
-                <ul>
-                    <li>
-                      Contributed to the Pytorch Connectomics package adding cellpose model for neuron instance segmentation.
-                    </li>
-                    <li>
-                      Explored semi-supervised methods to improve upon the performance of 3D segmentation.
-                    </li>
-                    <li>
-                      Designed an end-to-end pipeline using long range affinity learning and transformers for improving model accuracy.
-                    </li>
-                    
-                    <!-- <b>Tools:</b> Scikit-Learn, OpenCV, Pytorch -->
-                </ul>
-            </div>
-            
-          </div>
-        <!-- Experience 3 -->
-        <div class="card">
-            <div class="card-content">
-                <div class="row">
-                    <div class="col s12 m2">
-                    <a href="https://www.bits-pilani.ac.in/" target="_blank"><img alt="CEERI-Chennai logo"
-                        src="./assets/img/bits-logo.png" class="responsive-img center-block" /></a>
-    
-                    </div>
-    
-                    <div class="col s12 m7">
-                    <p>
-                        <span class="card-title"><a href="https://www.bits-pilani.ac.in/" target="_blank"
-                            class="teal-text hoverline">AI/ML Lab, BITS Pilani</a></span>
-                    </p>
-                    </div>
-                </div>
-                <div class="role whitesmoke-text text-darken-2">(Research Assistant)</div>
-                <div class="card-action">
-                    <span>April 2021 - Present</span>
-                </div>
-                <ul>
-                    <li>
-                    Investigating various Vision-Transformer networks for fine-grain human action recognition.
-                    </li>
-                    <li>
-                    Reviewed the existing works on fine-grained action recognition and summarised the major research gaps.
-                    </li>
-                    <li>
-                    Exploring better temporal modelling techniques for improving performance on RGB frames directly instead of using optical flow. 
-                    </li>
-                    <!-- <b>Tools:</b> Scikit-Learn, OpenCV, Pytorch -->
-                </ul>
-            </div>
-            
-        </div>
-
-        <!-- Experience 2 -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://github.com/IISc-AIRL" target="_blank"><img alt="IISc logo"
-                    src="./assets/img/IISc.jpg" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m7"> -->
-              <div class="col s12 m7">
-                <p>
-                  <span class="card-title"><a href="https://github.com/IISc-AIRL" target="_blank"
-                      class="teal-text hoverline">Artificial Intelligence and Robotics Laboratory, IISc 
-                    </a></span>
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+            <div class="hero-content fade-in">
+                <p class="greeting">Hi, I am</p>
+                <h1 class="name gradient-text-1">Atharva Chandak.</h1>
+                <h2 class="title">I build intelligent systems.</h2>
+                <p class="description">
+                    I'm an ML Engineer currently building multimodal AI solutions at <strong>eBay</strong>.
+                    My journey spans research at <strong>Harvard</strong>, <strong>Mila (UdeM)</strong>,
+                    <strong>CMU</strong>, and <strong>IISc</strong> - from continual learning and 3D segmentation to
+                    robotic vision - alongside industry experience in Deep Learning and scalable Full-Stack engineering.
                 </p>
-              </div>
-              
+                <div class="social-links">
+                    <a href="https://github.com/atharva-chandak" target="_blank" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/atharva-chandak" target="_blank" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://scholar.google.com/citations?user=O25nwjcAAAAJ&hl=en" target="_blank"
+                        aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="mailto:atharvachandak208@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <a href="#experience" class="btn btn-primary mt-4">Explore My Work</a>
             </div>
-            <div class="role whitesmoke-text text-darken-2">(Research Intern)</div>
-            <div class="card-action">
-                <span>June 2021 - December 2021</span>
-              </div>
-            <ul>
-              <li>
-                Worked on Generalized Continual Zero Shot Learning for various Computer Vision tasks.
-              </li>
-              <li>
-                Integrated the incremental learning setup with zero shot learning for more realistic adaption of DL methods in everyday scenario.
-              </li>
-              <li>
-                Extended the work to generalized, out of distribution tasks and also enable task free learning.
-              </li>
-                <!-- <b>Tools:</b> Python,  -->
-            </ul>
-          </div>
-          
-        </div>
-
-
-        
-        
-        <!-- <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://www.ceeri.res.in/" target="_blank"><img alt="CEERI logo"
-                    src="./assets/img/CEERI-Pilani.png" class="responsive-img center-block" /></a>
-              </div>
-              <div class="col s12 m7">
-                <p>
-                  <span class="card-title"><a href="https://www.ceeri.res.in/" target="_blank"
-                      class="teal-text hoverline">CSIR-CEERI Pilani</a></span>
-                </p>
-              </div>
+            <div class="hero-image fade-in delay-1">
+                <div class="image-wrapper">
+                    <img src="./assets/img/Atharva.jpg" alt="Atharva Chandak"
+                        onerror="this.src='https://via.placeholder.com/300?text=AC'">
+                </div>
             </div>
-            <div class="role whitesmoke-text text-darken-2">Research Intern</div>
-            <div class="card-action">
-                <span>May 2021 - Present</span>
-              </div>
-            <ul>
-              <li>
-                Working on Capsule Networks for video action recognition
-              </li>
-                <b>Tools:</b> PyTorch
-            </ul>
-          </div>
-        </div> -->
+        </section>
 
-        <!-- Experience 1 -->
-        <div class="card">
-            <div class="card-content">
-              <div class="row">
-                <div class="col s12 m2">
-                  <a href="https://www.csircmc.res.in/" target="_blank"><img alt="CEERI-Chennai logo"
-                      src="./assets/img/CEERI-Chennai.png" class="responsive-img center-block" /></a>
-  
-                </div>
-  
-                <div class="col s12 m7">
-                  <p>
-                    <span class="card-title"><a href="https://www.csircmc.res.in/" target="_blank"
-                        class="teal-text hoverline">CSIR-CEERI Chennai</a></span>
-                  </p>
-                </div>
-              </div>
-              <div class="role whitesmoke-text text-darken-2">(Research Intern)</div>
-              <div class="card-action">
-                  <span>May 2021 - August 2021</span>
-                </div>
-              <ul>
-                <li>
-                    Worked on texture classification of images using both traditional
-                    Computer vision with ML algorithms and Deep Learning based
-                    methods.
-                </li>
-                <li>
-                    Used traditional computer vision algorithms like FAST, ORB & BRISK combined with ML classifiers like SVMs, KNNs, etc.
-                </li>
-                <li>
-                    Extended the project to also implement simple image segmentation networks for performing texture segmentation useful for 
-                    detecting cracks and faults in leather.
-                </li>
-                  <!-- <b>Tools:</b> Scikit-Learn, OpenCV, Pytorch -->
-              </ul>
-            </div>  
-        </div>
+        <!-- Experience Section -->
+        <section id="experience" class="experience section">
+            <h3 class="section-title fade-in">Experience</h3>
+            <div class="timeline fade-in delay-1">
 
-      </div>
-    </section>
+                <!-- eBay -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <img src="./assets/img/ebay-logo.png" alt="eBay Logo" class="company-logo"
+                                style="padding: 2px;">
+                            <div>
+                                <h4>ML Engineer 2</h4>
+                                <span class="company">eBay</span>
+                            </div>
+                            <span class="date">Sept 2025 - Present</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Building Multi-Modal models to match user listings to catalog products for 1B+ items.
+                            </li>
+                            <li>Finetuning SOTA VLLMs for fine-grained image data extraction in Sports Trading Cards.
+                            </li>
+                            <li>Prototyped a buyer experience assistant for hyper-personalized recommendations with
+                                agentic memory.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>Python</span><span>PyTorch</span><span>LangChain</span>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- Third Section: Projects -->
-    <section id="projects" class="section scrollspy">
-      <h4 class="page-title white-text teal pushpin" data-target="projects">Projects</h4>
-      <div class="container"id="container">
-        <div class="row">
+                <!-- Wells Fargo -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <img src="./assets/img/WellsFargo_Logo.png" alt="Wells Fargo Logo" class="company-logo">
+                            <div>
+                                <h4>Software Engineer</h4>
+                                <span class="company">Wells Fargo</span>
+                            </div>
+                            <span class="date">Jul 2023 - Sept 2025</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Full-stack developer for high-volume PL credit card/loan platforms processing 1M+
+                                monthly transactions.</li>
+                            <li>Prototyped a scalable LLM chatbot for merchants, reducing application time by 30%.</li>
+                            <li>Built backend API microservices for POS EMIs and a SaaS customer insights portal.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>Java</span><span>React</span><span>Spring Boot</span><span>Python</span>
+                        </div>
+                    </div>
+                </div>
 
-          <!-- SISR Project -->
-          <div class="col s12 m6 l6">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="music streaming app" src="./assets/img/image-super-resolution.jpg" style="height: 100%; width: 100%" class="activator" />
-                <div class="tags">
-                    <div class="tag"># Deep Learning</div>
-                    <div class="tag"># Computer Vision</div>
+                <!-- Mila -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <img src="./assets/img/Mila_LOGO.png" alt="Mila Logo" class="company-logo">
+                            <div>
+                                <h4>Research Assistant</h4>
+                                <span class="company">Mila / UdeM</span>
+                            </div>
+                            <span class="date">Jan 2023 - Jun 2023</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Researched Continual Object Detection for autonomous driving, cutting catastrophic
+                                forgetting by 73%.</li>
+                            <li>Created on-device incremental OD methods for robotics using vision transformers.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>PyTorch</span><span>Hugging Face</span>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Image Super Resolution with Deep Learning<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A GAN based model to convert low resolution images to high resolution.
-                </p>
-                <div class="center"> 
-                    <i class="mdi-chevron-up"></i>
-                </div>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title whitesmoke-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <b>Tools:</b> Pytorch
-                  <li>Read and implemented various Deep Learning algorithms for image super resolution</li>
-                  <li>Used both - GAN based (SRGAN & ESRGAN) and non-GAN based(EDSR and RCAN) approaches .</li>
 
-                </ul>
-                <div class="card-action">
-                  <!-- <a aria-label="Visit " href="https://atharva-chandak.github.io/image-super-resolution" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a> https://github.com/atharva-chandak/image-super-resolution -->
-                  <a aria-label="Visit the GitHub repo for  project"
-                    target="_blank" data-position="top" data-tooltip="Code to be uploaded soon"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
+                <!-- Airlab -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <img src="./assets/img/Airlab.png" alt="Airlab Logo" class="company-logo">
+                            <div>
+                                <h4>Research Intern</h4>
+                                <span class="company">Airlab, CMU</span>
+                            </div>
+                            <span class="date">Aug 2021 - Dec 2021</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Engineered the vision pipeline for TartanAviation, generating 3.1M high-resolution images and 700k+ auto-labeled aircraft annotations.</li>
+                            <li>Designed optimized models for real-time aerial vehicle detection and tracking on drone hardware with multi-camera input.</li>
+                            <li>Analyzed OOD climatic conditions to improve model robustness across diverse weather scenarios.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>Python</span><span>PyTorch</span><span>OpenCV</span>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- EYRC Project -->
-          <div class="col s12 m6 l6">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="./assets/img/project-eyrc.png" style="height: 100%; width: 100%" class="activator" />
-                <div class="tags">
-                    <div class="tag"># Robotics</div>
-                    <div class="tag"># Computer Vision</div>
+                <!-- Wells Fargo (Intern) -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <img src="./assets/img/WellsFargo_Logo.png" alt="Wells Fargo Logo" class="company-logo">
+                            <div>
+                                <h4>Summer Intern</h4>
+                                <span class="company">Wells Fargo</span>
+                            </div>
+                            <span class="date">May 2022 - Jul 2022</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Built an end-to-end AI speech chatbot for home lending queries, integrating speech-to-text and TTS APIs for a full voice interaction loop.</li>
+                            <li>Implemented NLP pipeline for intent and entity extraction, achieving F1 scores of 93.4% and 83.5% respectively.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>NLP</span><span>Rasa</span><span>Python</span>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">UAV for parcel delivery <i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                   A simulated drone which delivers multiple packages to their destinations, optimizing for time and quantity. 
-                   <!-- Done as part of IIT Bombay's E-Yantra Robotics Competition. -->
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                    <b>Tools:</b> Robot Operating System (ROS), Gazebo simulator, OpenCV
-                    <li>Control systems (PID building).</li>
-                    <li>Path planning & obstacle avoidance.</li>
-                    <li>Image processing for marker detection & QR code scanning.</li>
-                    <li>Scheduling of the parcels to be delivered and returned.</li>
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://github.com/Atharva-Chandak/eYRC_Vitarana_Drone" target="_blank"
-                    data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- Orca Project -->
-          <div class="col s12 m6 l6">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="quiz app" src="./assets/img/project-orca-web-template.jpg" style="height: 100%; width: 100%" class="activator" />
-                <div class="tags">
-                    <div class="tag"># Web Development</div>
+                <!-- Harvard -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <img src="./assets/img/VCG.png" alt="Harvard VCG Logo" class="company-logo">
+                            <div>
+                                <h4>Visiting Research Intern</h4>
+                                <span class="company">Visual Computing Group, Harvard</span>
+                            </div>
+                            <span class="date">Jan 2022 - May 2022</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Contributed to PyTorch Connectomics, adding cellpose model support for neuron instance segmentation.</li>
+                            <li>Explored semi-supervised methods and designed an affinity learning + transformer pipeline to improve 3D segmentation accuracy.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>PyTorch</span><span>3D Segmentation</span><span>Transformers</span>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Orca - template website<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                    A jekyll template for easy creation of course websites.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title whitesmoke-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <b>Tools:</b> HTML, CSS, Bootstrap, Jekyll
-                  <li>Created template for easily building a website for any course without having to code the messy HTML & CSS parts.</li>
-                  <li>Used jekyll for allowing website to read & display data from .yaml files which can be easily filled by the user.</li>
 
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://atharva-chandak.github.io/orca_web_template/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/atharva-chandak/orca_web_template"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
+                <!-- IISc -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <img src="./assets/img/IISc.jpg" alt="IISc Logo" class="company-logo">
+                            <div>
+                                <h4>Research Intern</h4>
+                                <span class="company">AIRL, IISc</span>
+                            </div>
+                            <span class="date">Jun 2021 - Dec 2021</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Worked on Generalized Continual Zero-Shot Learning, integrating incremental learning with ZSL for realistic DL deployment.</li>
+                            <li>Extended the setup to task-free, out-of-distribution generalization across diverse Computer Vision tasks.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>Zero-Shot Learning</span><span>Continual Learning</span><span>PyTorch</span>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <!-- AI RoboSoccer -->
-          <!-- <div class="col s12 m6 l6">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of web app" src="./assets/img/project-blog-logo.jpg"
-                style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline"><i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  AI-Robo-soccer
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> OpenAI-gym, </li>
-                  <li>Agents are trained to play soccer in a primitive 2D simulator.</li>
-                  <li></li>
 
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="#" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="#"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Fourth Section: Skills -->
-    <section id="skills" class="section scrollspy">
-      <h4 class="page-title white-text teal pushpin" data-target="skills">Skills</h4>
-      <div class="container"id="container">
-        <!-- Languages -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="whitesmoke-text light" style="font-size:x-large">Languages</h4>
-            
-            <div class="container list"> 
-                <div class="row s4 m3">
-                    <div class="col"><img alt="" src="./assets/img/python-logo-1-300x300.jpg" class="responsive-img" /></div><div class="col">Python</div>
-                </div>
-                <div class="row s4 m3">
-                    <div class="col"><img alt="" src="./assets/img/javascript-logo.png" class="responsive-img" /> </div><div class="col">Javascript</div>
-                </div>
-                <div class="row s4 m3">
-                  <div class="col"><img alt="" src="./assets/img/java-logo.png" class="responsive-img" /></div><div class="col">Java</div>
-                </div>
-                <div class="row s4 m3">
-                  <div class="col"><img alt="" src="./assets/img/Cpp-logo.png" class="responsive-img" /> </div><div class="col">C++</div>
-                </div>
-                <!-- <div class="col s4 m3">
-                    <img alt="" src="./assets/img/java-logo.webp" class="responsive-img" />Java
+                <!-- BITS Pilani (RA) -->
+                <!-- <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <img src="./assets/img/bits-logo.png" alt="BITS Pilani Logo" class="company-logo">
+                            <div>
+                                <h4>Research Assistant</h4>
+                                <span class="company">AI/ML Lab, BITS Pilani</span>
+                            </div>
+                            <span class="date">Apr 2021 - Aug 2022</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Investigated various Vision-Transformer networks for fine-grain human action
+                                recognition.</li>
+                            <li>Explored temporal modelling techniques for improving performance on RGB frames directly
+                                instead of using optical flow.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>Vision Transformers</span><span>Action Recognition</span>
+                        </div>
+                    </div>
                 </div> -->
+
+                <!-- CSIR-CEERI Chennai -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <img src="./assets/img/CEERI-Chennai.png" alt="CSIR-CEERI Logo" class="company-logo">
+                            <div>
+                                <h4>Summer Intern</h4>
+                                <span class="company">CSIR-CEERI Chennai</span>
+                            </div>
+                            <span class="date">May 2021 - Aug 2021</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Applied traditional CV algorithms (FAST, ORB, BRISK) with ML classifiers (SVMs, KNNs) for texture classification of industrial images.</li>
+                            <li>Implemented segmentation networks to detect cracks and faults in leather, enabling automated quality inspection.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>OpenCV</span><span>Scikit-Learn</span><span>Segmentation</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-          </div>
-        </div>
-        
+        </section>
 
-        <div class="card">
-            <div class="card-content">
-                <h4 class="whitesmoke-text light" style="font-size:x-large">Libraries & Frameworks</h4>
-                <div class="container list">
-                    <div class="row">
-                        <div class="col"><img alt="" src="./assets/img/pytorch-logo.png" class="responsive-img" /></div><div class="col">PyTorch</div>
+        <!-- Education Section -->
+        <section id="education" class="education section" style="min-height: auto; padding-top: 2rem;">
+            <h3 class="section-title fade-in">Education</h3>
+            <div class="edu-card glass-card fade-in delay-1">
+                <img src="./assets/img/bits-logo.png" alt="BITS Pilani Logo" style="width: 50px; margin-bottom: 1rem;">
+                <h4>BITS Pilani</h4>
+                <p class="degree">Bachelor of Engineering in Computer Science</p>
+                <p class="coursework"><strong>Coursework:</strong> Data Structures, Algorithms, Cloud Computing, Machine
+                    Learning, Deep Learning, Computer Vision, Natural Language Processing.</p>
+            </div>
+        </section>
+
+        <!-- Projects & Publications -->
+        <section id="projects" class="projects section">
+            <h3 class="section-title fade-in">Featured Work</h3>
+            <div class="projects-grid fade-in delay-1">
+
+                <div class="project-card glass-card">
+                    <div class="project-img-wrapper">
+                        <img src="https://placehold.co/400x180/1e1b4b/818cf8?text=AdQuestA+%E2%80%A2+WACV+2025" alt="AdQuestA">
                     </div>
-                    <div class="row">
-                        <div class="col"><img alt="" src="./assets/img/huggingface-logo.png" class="responsive-img" /></div><div class="col">Hugging Face</div>
+                    <div class="project-header" style="margin-top: 1rem;">
+                        <i class="far fa-file-alt folder-icon" style="color: #f43f5e;"></i>
+                        <div class="project-links">
+                            <a href="https://openaccess.thecvf.com/content/WACV2025/html/Choudhary_AdQuestA_Knowledge-Guided_Visual_Question_Answer_Framework_for_Advertisements_WACV_2025_paper.html" target="_blank" aria-label="Paper Link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col"><img alt="" src="./assets/img/numpy-logo-1-500x500.jpg" class="responsive-img" /></div><div class="col">NumPy</div>
+                    <h4 class="project-title">AdQuestA: VQA for Advertisements</h4>
+                    <p class="project-desc">
+                        A multimodal VQA framework for ads achieving 58.58% accuracy on a new 94k+ QA pair benchmark. Integrates RAG with LLaVA for knowledge-grounded ad understanding. Published at WACV 2025.
+                    </p>
+                    <div class="tech-stack">
+                        <span>VLM</span><span>RAG</span><span>LLaVA</span>
                     </div>
-                    <div class="row">
-                        <div class="col"><img alt="" src="./assets/img/keras-logo.png" class="responsive-img" /></div><div class="col">Keras</div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-img-wrapper">
+                        <img src="https://placehold.co/400x180/0f172a/38bdf8?text=LIFT-Net+%E2%80%A2+Action+Recognition" alt="LIFT-Net">
                     </div>
-                    <div class="row">
-                        <div class="col"><img alt="" src="./assets/img/pandas-logo-2-500x500.jpg" class="responsive-img" /></div><div class="col">Pandas</div>
+                    <div class="project-header" style="margin-top: 1rem;">
+                        <i class="far fa-file-alt folder-icon" style="color: #38bdf8;"></i>
+                        <div class="project-links">
+                            <a href="./LIFT_Net.pdf" target="_blank" aria-label="Paper Link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col"><img alt="" src="./assets/img/opencv-logo-1-500x500.jpg" class="responsive-img" /></div><div class="col">OpenCV</div>
+                    <h4 class="project-title">LIFT-Net</h4>
+                    <p class="project-desc">
+                        A dual-pathway transformer attending to raw RGB and illumination-corrected frames for light-invariant action recognition. Achieved SOTA on HMDB51, UCF101, ARID, and InfAR.
+                    </p>
+                    <div class="tech-stack">
+                        <span>Transformers</span><span>Action Recognition</span><span>Multi-modal</span>
                     </div>
-                    <div class="row">
-                        <div class="col"><img alt="" src="./assets/img/sk-learn-logo-1-500x500.jpg" class="responsive-img" /></div><div class="col">scikit-learn</div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-img-wrapper">
+                        <img src="./assets/img/project-eyrc.png" alt="Drone Delivery">
                     </div>
-                    <div class="row">
-                        <div class="col"><img alt="" src="./assets/img/matplotlib-logo-1-500x500.jpg" class="responsive-img" /></div><div class="col">Matplotlib</div>
+                    <div class="project-header" style="margin-top: 1.5rem;">
+                        <i class="far fa-folder-open folder-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/Atharva-Chandak/eYRC_Vitarana_Drone" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col"><img alt="" src="./assets/img/ROS.png" class="responsive-img" /></div><div class="col">ROS</div>
+                    <h4 class="project-title">Drone for Parcel Delivery</h4>
+                    <p class="project-desc">
+                        Optimized UAV navigation, control systems, and QR-based detection in a simulated environment,
+                        improving delivery success rates and accuracy. Top 5 in E-Yantra Competition.
+                    </p>
+                    <div class="tech-stack">
+                        <span>ROS</span><span>OpenCV</span><span>Control Systems</span>
                     </div>
-                    <div class="row">
-                        <div class="col"><img alt="" src="./assets/img/springboot-logo.png" class="responsive-img" /></div><div class="col">Spring Boot</div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-img-wrapper">
+                        <img src="./assets/img/image-super-resolution.jpg" alt="Image Super Resolution">
                     </div>
-                    <div class="row">
-                        <div class="col"><img alt="" src="./assets/img/flask-logo.png" class="responsive-img" /></div><div class="col">Flask</div>
+                    <div class="project-header" style="margin-top: 1.5rem;">
+                        <i class="far fa-folder-open folder-icon"></i>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col"><img alt="" src="./assets/img/react.png" class="responsive-img" /></div><div class="col">React</div>
+                    <h4 class="project-title">Image Super Resolution</h4>
+                    <p class="project-desc">
+                        A GAN based model to convert low resolution images to high resolution. Read and implemented
+                        various Deep Learning algorithms like SRGAN & ESRGAN.
+                    </p>
+                    <div class="tech-stack">
+                        <span>PyTorch</span><span>GANs</span><span>Computer Vision</span>
                     </div>
-                    <!-- <div class="row">
-                        <div class="col"><img alt="" src="./assets/img/keras-logo.png" class="responsive-img" /></div><div class="col">Keras</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <h3 class="section-title fade-in">Technical Arsenal</h3>
+            <div class="skills-container fade-in delay-1">
+                <div class="skill-category glass-card">
+                    <h4 class="gradient-text-1">Languages</h4>
+                    <div class="skill-tags">
+                        <span><i class="devicon-python-plain colored"></i> Python</span>
+                        <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                        <span><i class="devicon-typescript-plain colored"></i> TypeScript</span>
+                        <span><i class="devicon-java-plain colored"></i> Java</span>
+                        <span><i class="devicon-cplusplus-plain colored"></i> C++</span>
+                        <span><i class="devicon-html5-plain colored"></i> HTML/CSS</span>
                     </div>
-                    <div class="row">
-                        <div class="col"><img alt="" src="./assets/img/tensorflow-logo-1.png" class="responsive-img" /></div><div class="col">TensorFlow</div>
-                    </div> -->
-                    
+                </div>
+                <div class="skill-category glass-card">
+                    <h4 class="gradient-text-2">ML / AI</h4>
+                    <div class="skill-tags">
+                        <span><i class="devicon-pytorch-original colored"></i> PyTorch</span>
+                        <span>🤗 Hugging Face</span>
+                        <span>🦜 LangChain</span>
+                        <span><i class="devicon-opencv-plain colored"></i> OpenCV</span>
+                        <span><i class="devicon-scikitlearn-plain colored"></i> Scikit-Learn</span>
+                        <span><i class="devicon-tensorflow-original colored"></i> TensorFlow</span>
+                        <span><i class="devicon-numpy-plain colored"></i> NumPy</span>
+                        <span><i class="devicon-pandas-plain colored"></i> Pandas</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h4 class="gradient-text-3">Frameworks</h4>
+                    <div class="skill-tags">
+                        <span><i class="devicon-react-original colored"></i> React</span>
+                        <span><i class="devicon-nextjs-plain colored"></i> NextJS</span>
+                        <span><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+                        <span><i class="devicon-spring-original colored"></i> Spring Boot</span>
+                        <span><i class="devicon-flask-original colored"></i> Flask</span>
+                        <span><i class="devicon-django-plain colored"></i> Django</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h4 class="gradient-text-4">Cloud & Tools</h4>
+                    <div class="skill-tags">
+                        <span><i class="devicon-docker-plain colored"></i> Docker</span>
+                        <span><i class="devicon-amazonwebservices-plain-wordmark colored"></i> AWS</span>
+                        <span><i class="devicon-azure-plain colored"></i> Azure</span>
+                        <span><i class="devicon-git-plain colored"></i> Git</span>
+                        <span><i class="devicon-jenkins-line colored"></i> Jenkins</span>
+                        <span><i class="devicon-apachekafka-original colored"></i> Kafka</span>
+                        <span><i class="devicon-mongodb-plain colored"></i> MongoDB</span>
+                        <span><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Frameworks -->
-        <!-- <div class="card">
-          <div class="card-content">
-            <h4 class="whitesmoke-text light">Frameworks</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="./assets/img/django-logo.webp" class="responsive-img" />Django
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="./assets/img/flask-logo.png" class="responsive-img" />Flask
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="./assets/img/bootstrap.png" class="responsive-img" />Bootstrap
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="./assets/img/keras-logo.png" class="responsive-img" />Keras
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="./assets/img/tensorflow-logo-1.png" class="responsive-img" />TensorFlow
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="./assets/img/pytorch-logo.png" class="responsive-img" />PyTorch
-              </div>
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements section">
+            <h3 class="section-title fade-in">Major Achievements</h3>
+            <div class="achievements-list glass-card fade-in delay-1">
+                <ul>
+                    <li><i class="fas fa-chart-line highlight-icon"></i> <strong>Top 30 in India</strong> in IMC Prosperity 2, a global algorithmic trading competition by IMC Trading.</li>
+                    <li><i class="fas fa-trophy highlight-icon"></i> <strong>3rd Place</strong> in AI RoboSoccer
+                        Competition (148 teams) using PPO-based RL agents.</li>
+                    <li><i class="fas fa-medal highlight-icon"></i> Ranked 598 &amp; 2449 out of 1.23M in JEE Main &amp;
+                        Advanced.</li>
+                    <li><i class="fas fa-robot highlight-icon"></i> <strong>Top 5</strong> in IIT Bombay's E-Yantra
+                        Robotics Competition.</li>
+                </ul>
             </div>
-          </div>
-        </div> -->
+        </section>
 
-        <!-- Other -->
-        <!-- <div class="card">
-          <div class="card-content">
-            <h4 class="whitesmoke-text light">Other</h4>
-            <div class="row text-center">
+        </section>
 
-
-              <div class="col s4 m2">
-                <img alt="" src="./assets/img/git.png" class="responsive-img" />Git
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="./assets/img/skills-jupyter.png" class="responsive-img" />Jupyter Notebook/Google Colab
-              </div>
+        <footer class="footer">
+            <p>Designed & Built by Atharva Chandak</p>
+            <div class="footer-socials">
+                <a href="https://github.com/atharva-chandak" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/atharva-chandak" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://scholar.google.com/citations?user=O25nwjcAAAAJ&hl=en" target="_blank"
+                    aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
             </div>
-          </div>
-        </div> -->
+        </footer>
+    </main>
 
-      </div>
-    </section>
-
-    <!-- Fifth Section: Contact -->
-    <section id="contact" class="section scrollspy full-height">
-      <h4 class="page-title white-text teal pushpin" data-target="contact">Contact</h4>
-      <div class="container"id="container">
-        <!-- <p>
-          <a aria-label="Call me" data-position="top" data-tooltip="Call me"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
-              aria-label="Call me">+910000000000</a></a>
-        </p> -->
-        <h5>Let's grab a coffee? Or discuss an exciting idea?</h5> <br> <h5>Get in touch:</h5>
-        <div style="display: flex;flex-direction: row; text-align: center;width: 100%; justify-content: space-evenly;padding-top: 2%;"> 
-            <div>
-                <div>
-                    <a aria-label="Email me" href="mailto:atharvachandak208@gmail.com" target="_blank" data-position="top"
-                        data-tooltip="Email me" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                        class="fa fa-envelope"></i>
-                        <!-- <a aria-label="Email me" href="mailto:atharvachandak208@gmail.com"
-                        class="hoverline">atharvachandak208@gmail.com</a> -->
-                    </a>
-                </div>
-                <div>
-                    Email
-                </div>
-            </div>
-
-            <div>
-                <div>
-
-                    <a aria-label="DM me on LinkedIn" href="https://www.linkedin.com/in/atharva-chandak" target="_blank"
-                    data-position="top" data-tooltip="DM me on LinkedIn"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                    class="fa fa-linkedin" style="background: #0072b1;"></i>
-                    <!-- <a aria-label="me on LinkedIn" href="https://www.linkedin.com/in/atharva-chandak"
-                        class="hoverline" target="_blank">www.linkedin.com/in/atharva-chandak</a> -->
-                    </a>
-                </div>
-                <div>
-                    LinkedIn
-                </div>
-            </div>
-
-            <div>
-                <div>
-
-                    <a aria-label="View me on GitHub" href="https://github.com/atharva-chandak" target="_blank"
-                    data-position="top" data-tooltip="View me on GitHub"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github" style="background: #000;"></i>
-                    <!-- <a aria-label="me on Github" href="https://github.com/atharva-chandak" class="hoverline"
-                        target="_blank" >www.github.com/atharva-chandak</a> -->
-                    </a>
-                </div>
-                <div>
-                    Github
-                </div>
-            </div>
-            <div>
-                <div>    
-                    <a aria-label="DM me on Twitter" href="https://twitter.com/atharva2chandak" target="_blank"
-                    data-position="top" data-tooltip="DM me on Twitter"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-twitter" style="background:rgb(29, 161, 242)"></i>
-                    <!-- <a aria-label="me on Github" href="https://twitter.com/atharva2chandak" class="hoverline"
-                        target="_blank" >www.twitter.com/atharva2chandak</a> -->
-                    </a>
-                </div>
-                <div>
-                    Twitter
-                </div>
-            </div>
-        </div>
-
-      </div>
-    </section>
-    <h6 class="page-title white-text teal center" style="bottom: 0; margin:0;padding:0.5%;">Webite made from template: <a class="teal-text hoverline" href="https://varadbhogayata.github.io" target="blank">varadbhogayata.github.io</a></h6>
-  </main>
-
-  <!-- typed.js -->
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["Deep Learning", "Computer Vision", "Multi-modal Learning", "Robotics", "Reinforcement Learning"],
-      loop: true,
-      typeSpeed: 80,
-      backSpeed: 40
-    });
-  </script>
-
-
-  <!-- jQuery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-  <!-- Materialize - Compiled and minified JavaScript-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-  <script>
-    // Materialize - Initializers
-    $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-    })
-    
-    // document.addEventListener("DOMContentLoaded", function() {
-    // /* Pushpin Initialization */
-    // $('.pushpin').each(function() {
-    //     var $this = $(this);
-    //     var $target = $('#' + $(this).attr('data-target'));
-    //     // $target.children('#container').css('margin-top','8em');
-    //     // console.log($target.children('#container'))
-        
-    //     $this.pushpin({
-    //     top:    $target.offset().top,
-    //     bottom: $target.offset().top + $target.outerHeight() - $this.height()-100
-    //     });
-    //     console.log($target.offset().top,$target.offset().top + $target.outerHeight() - $this.height())
-    // });
-    // });
-
-  </script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
