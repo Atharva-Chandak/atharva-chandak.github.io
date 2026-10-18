@@ -33,3 +33,8 @@ tmp/
 *.key
 *.env
 .env.*
+
+# Local agent tooling
+.agents/
+.claude/
+skills-lock.json

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atharva Chandak | ML Engineer</title>
     <meta name="description"
-        content="Portfolio of Atharva Chandak, ML Engineer 2 at eBay, specializing in AI, Deep Learning, and Full Stack Development.">
+        content="Atharva Chandak is an ML Engineer at eBay working on vision-language models, LLM inference and catalog matching. Previously Wells Fargo, Mila and CMU AirLab.">
 
     <!-- Google Fonts: Inter and Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,6 +35,7 @@
         <div class="nav-links">
             <a href="#about">About</a>
             <a href="#experience">Experience</a>
+            <a href="#research">Research</a>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
             <a href="./Atharva_Chandak_Resume.pdf" target="_blank" class="btn btn-outline">Resume</a>
@@ -50,10 +51,11 @@
                 <h1 class="name gradient-text-1">Atharva Chandak.</h1>
                 <h2 class="title">I build intelligent systems.</h2>
                 <p class="description">
-                    I'm an ML Engineer currently building multimodal AI solutions at <strong>eBay</strong>.
-                    My journey spans research at <strong>Harvard</strong>, <strong>Mila (UdeM)</strong>,
-                    <strong>CMU</strong>, and <strong>IISc</strong> - from continual learning and 3D segmentation to
-                    robotic vision - alongside industry experience in Deep Learning and scalable Full-Stack engineering.
+                    I'm an ML Engineer at <strong>eBay</strong>, where I work on vision-language models that
+                    figure out what a seller is actually listing, and on making LLMs cheaper to serve.
+                    Before that I built an LLM assistant and credit-card services at <strong>Wells Fargo</strong>,
+                    and did research at <strong>Mila</strong>, <strong>CMU</strong>, <strong>Harvard</strong> and
+                    <strong>IISc</strong>.
                 </p>
                 <div class="social-links">
                     <a href="https://github.com/atharva-chandak" target="_blank" aria-label="GitHub"><i
@@ -95,16 +97,16 @@
                             </div>
                             <span class="date">Sept 2025 - Present</span>
                         </div>
+                        <p class="timeline-summary">Sellers describe the same product in countless ways. My work is figuring out which catalog product a listing really is, so recommendations and the buyer experience start from clean data.</p>
                         <ul class="timeline-details">
-                            <li>Building Multi-Modal models to match user listings to catalog products for 1B+ items.
-                            </li>
-                            <li>Finetuning SOTA VLLMs for fine-grained image data extraction in Sports Trading Cards.
-                            </li>
-                            <li>Prototyped a buyer experience assistant for hyper-personalized recommendations with
-                                agentic memory.</li>
+                            <li>Built multimodal models that use a listing's photos and text together to find its catalog match. Better matches fed recommendations and showed up as an eight-figure lift in GMV.</li>
+                            <li>Pushed precision up while widening coverage in several categories at once, which usually means trading one against the other.</li>
+                            <li>Fine-tuning open vision LLMs (Qwen3, Gemma 4) to read the small visual details that separate one collectible from another.</li>
+                            <li>Contributed to optimising and deploying our LLMs, which raised throughput (TPS) by 30%, improved GPU utilisation and cut long-term serving cost.</li>
+                            <li>Prototyped a shopping assistant with memory and retrieval, as a first look at what agentic help could do for buyers.</li>
                         </ul>
                         <div class="tech-stack">
-                            <span>Python</span><span>PyTorch</span><span>LangChain</span>
+                            <span>PyTorch</span><span>HuggingFace</span><span>vLLM</span><span>Triton</span><span>LangChain</span>
                         </div>
                     </div>
                 </div>
@@ -121,14 +123,14 @@
                             </div>
                             <span class="date">Jul 2023 - Sept 2025</span>
                         </div>
+                        <p class="timeline-summary">Two years on the merchant lending side of a large bank, split between services that move money and the first LLM product I took all the way to production.</p>
                         <ul class="timeline-details">
-                            <li>Full-stack developer for high-volume PL credit card/loan platforms processing 1M+
-                                monthly transactions.</li>
-                            <li>Prototyped a scalable LLM chatbot for merchants, reducing application time by 30%.</li>
-                            <li>Built backend API microservices for POS EMIs and a SaaS customer insights portal.</li>
+                            <li>Started with a prototype assistant for merchant workflows and stayed with it through hardening and launch. Loan applications finished up to 30% faster.</li>
+                            <li>Worked on credit-card services that handle over a million transactions a month for thousands of merchants.</li>
+                            <li>Wrote the POS EMI microservices that let a purchase at the counter be split into installments, plus analytics so merchants can see how their business is doing.</li>
                         </ul>
                         <div class="tech-stack">
-                            <span>Java</span><span>React</span><span>Spring Boot</span><span>Python</span>
+                            <span>Java</span><span>Spring</span><span>React</span><span>Python</span><span>MongoDB</span><span>Jenkins</span>
                         </div>
                     </div>
                 </div>
@@ -145,10 +147,11 @@
                             </div>
                             <span class="date">Jan 2023 - Jun 2023</span>
                         </div>
+                        <p class="timeline-summary">A detector trained on new conditions tends to forget the old ones, which is a problem for a car that drives through sun, rain and night. My thesis was about stopping that.</p>
                         <ul class="timeline-details">
-                            <li>Researched Continual Object Detection for autonomous driving, cutting catastrophic
-                                forgetting by 73%.</li>
-                            <li>Created on-device incremental OD methods for robotics using vision transformers.</li>
+                            <li>Cut catastrophic forgetting in object detection by about three quarters.</li>
+                            <li>Tested on-device incremental learning for robots. Transformer detectors lost around 4 mAP50 points when adapting to new domains, where CNNs lost nearly 15.</li>
+                            <li>On the CLAD-D benchmark the approach beat baselines by roughly 15%.</li>
                         </ul>
                         <div class="tech-stack">
                             <span>PyTorch</span><span>Hugging Face</span>
@@ -168,13 +171,10 @@
                             </div>
                             <span class="date">Aug 2021 - Dec 2021</span>
                         </div>
+                        <p class="timeline-summary">TartanAviation records real aircraft around airports with cameras, ATC radio and ADS-B. Drawing aircraft boxes from scratch at that scale is impractical, so I worked on how the labels get made.</p>
                         <ul class="timeline-details">
-                            <li>Engineered the vision pipeline for TartanAviation, generating 3.1M high-resolution
-                                images and 700k+ auto-labeled aircraft annotations.</li>
-                            <li>Designed optimized models for real-time aerial vehicle detection and tracking on drone
-                                hardware with multi-camera input.</li>
-                            <li>Analyzed OOD climatic conditions to improve model robustness across diverse weather
-                                scenarios.</li>
+                            <li>Wrote the vision pipeline that turned footage from about 550 sequences into over 3 million high-resolution images.</li>
+                            <li>Built the camera calibration and auto-labeling framework. Calibration ties each camera to the airfield so ADS-B positions land in the image, and those projections help check the detector's output. The result was 700k+ aircraft bounding boxes.</li>
                         </ul>
                         <div class="tech-stack">
                             <span>Python</span><span>PyTorch</span><span>OpenCV</span>
@@ -194,14 +194,14 @@
                             </div>
                             <span class="date">May 2022 - Jul 2022</span>
                         </div>
+                        <p class="timeline-summary">A summer project built around one question: can a customer ask about a home loan out loud and get a useful answer?</p>
                         <ul class="timeline-details">
-                            <li>Built an end-to-end AI speech chatbot for home lending queries, integrating
-                                speech-to-text and TTS APIs for a full voice interaction loop.</li>
-                            <li>Implemented NLP pipeline for intent and entity extraction, achieving F1 scores of 93.4%
-                                and 83.5% respectively.</li>
+                            <li>Built the whole voice loop. Speech-to-text takes the question in, an action server decides and composes the reply, and TTS speaks it back.</li>
+                            <li>Wrote the NLP pipeline: intent classification landed in the low 90s on F1 and entity extraction in the low 80s.</li>
+                            <li>Queries were resolved in up to about two thirds less time.</li>
                         </ul>
                         <div class="tech-stack">
-                            <span>NLP</span><span>Rasa</span><span>Python</span>
+                            <span>NLP</span><span>Flask</span><span>React</span><span>Python</span>
                         </div>
                     </div>
                 </div>
@@ -278,30 +278,6 @@
                     </div>
                 </div> -->
 
-                <!-- CSIR-CEERI Chennai -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content glass-card">
-                        <div class="timeline-header">
-                            <img src="./assets/img/CEERI-Chennai.png" alt="CSIR-CEERI Logo" class="company-logo">
-                            <div>
-                                <h4>Summer Intern</h4>
-                                <span class="company">CSIR-CEERI Chennai</span>
-                            </div>
-                            <span class="date">May 2021 - Aug 2021</span>
-                        </div>
-                        <ul class="timeline-details">
-                            <li>Applied traditional CV algorithms (FAST, ORB, BRISK) with ML classifiers (SVMs, KNNs)
-                                for texture classification of industrial images.</li>
-                            <li>Implemented segmentation networks to detect cracks and faults in leather, enabling
-                                automated quality inspection.</li>
-                        </ul>
-                        <div class="tech-stack">
-                            <span>OpenCV</span><span>Scikit-Learn</span><span>Segmentation</span>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </section>
 
@@ -318,75 +294,98 @@
             </div>
         </section>
 
-        <!-- Projects & Publications -->
+        <!-- Research -->
+        <section id="research" class="research section">
+            <h3 class="section-title fade-in">Research</h3>
+            <div class="research-list fade-in delay-1">
+
+                <a class="research-card glass-card"
+                    href="https://openaccess.thecvf.com/content/WACV2025/html/Choudhary_AdQuestA_Knowledge-Guided_Visual_Question_Answer_Framework_for_Advertisements_WACV_2025_paper.html"
+                    target="_blank" rel="noopener">
+                    <div class="research-meta">
+                        <span class="venue">WACV</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="research-body">
+                        <h4 class="project-title">AdQuestA: Knowledge-Guided VQA for Advertisements</h4>
+                        <p class="project-desc">
+                            Questions about an ad often depend on knowledge that is not in the image. We built the
+                            first ad-specific VQA dataset (94k+ QA pairs over 17k images) and a framework that adds
+                            retrieval and LLaVA's implicit knowledge. It roughly doubles QA accuracy over earlier
+                            methods and beats models ten times its size at pattern matching.
+                        </p>
+                        <div class="tech-stack"><span>VLM</span><span>RAG</span><span>LLaVA</span><span>Dataset</span></div>
+                    </div>
+                    <i class="fas fa-arrow-up-right-from-square card-arrow"></i>
+                </a>
+
+                <a class="research-card glass-card" href="https://www.nature.com/articles/s41597-025-04775-6"
+                    target="_blank" rel="noopener">
+                    <div class="research-meta">
+                        <span class="venue">Nature Scientific Data</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="research-body">
+                        <h4 class="project-title">Image, Speech, and ADS-B Trajectory Datasets for Terminal Airspace
+                            Operations</h4>
+                        <p class="project-desc">
+                            Small, distant aircraft are hard for current detectors. The paper pairs camera images with
+                            ATC speech and ADS-B trajectories to support work on detection, detect-and-avoid and
+                            trajectory forecasting. At CMU's AirLab I worked on the perception side: calibrating the
+                            cameras to the airfield so ADS-B tracks project into the image, then using that geometry
+                            to verify detections and label 700k+ aircraft across 3.1M images.
+                        </p>
+                        <div class="tech-stack"><span>Multimodal</span><span>Sensor fusion</span><span>Camera calibration</span><span>Weak supervision</span></div>
+                    </div>
+                    <i class="fas fa-arrow-up-right-from-square card-arrow"></i>
+                </a>
+
+                <a class="research-card glass-card" href="./LIFT_Net.pdf" target="_blank" rel="noopener">
+                    <div class="research-meta">
+                        <span class="venue">Research paper</span>
+                        <span class="year">2022</span>
+                    </div>
+                    <div class="research-body">
+                        <h4 class="project-title">LIFT-Net: Action Recognition Across Lighting Conditions</h4>
+                        <p class="project-desc">
+                            Recognising actions in poor light is hard because raw frames carry little signal. LIFT-Net
+                            is a dual-pathway transformer that reads raw and illumination-corrected frames side by
+                            side. It beat the state of the art on HMDB51, UCF101, ARID (95.21%) and InfAR.
+                        </p>
+                        <div class="tech-stack"><span>Transformers</span><span>Action Recognition</span><span>Low light</span></div>
+                    </div>
+                    <i class="fas fa-arrow-up-right-from-square card-arrow"></i>
+                </a>
+
+            </div>
+            <p class="research-more fade-in delay-2">More on <a
+                    href="https://scholar.google.com/citations?user=O25nwjcAAAAJ&hl=en" target="_blank"
+                    rel="noopener">Google Scholar</a>.</p>
+        </section>
+
+        <!-- Projects -->
         <section id="projects" class="projects section">
-            <h3 class="section-title fade-in">Featured Work</h3>
+            <h3 class="section-title fade-in">Projects</h3>
             <div class="projects-grid fade-in delay-1">
 
-                <div class="project-card glass-card">
-                    <div class="project-img-wrapper">
-                        <img src="https://placehold.co/400x180/1e1b4b/818cf8?text=AdQuestA+%E2%80%A2+WACV+2025"
-                            alt="AdQuestA">
-                    </div>
-                    <div class="project-header" style="margin-top: 1rem;">
-                        <i class="far fa-file-alt folder-icon" style="color: #f43f5e;"></i>
-                        <div class="project-links">
-                            <a href="https://openaccess.thecvf.com/content/WACV2025/html/Choudhary_AdQuestA_Knowledge-Guided_Visual_Question_Answer_Framework_for_Advertisements_WACV_2025_paper.html"
-                                target="_blank" aria-label="Paper Link"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <h4 class="project-title">AdQuestA: VQA for Advertisements</h4>
-                    <p class="project-desc">
-                        A multimodal VQA framework for ads achieving 58.58% accuracy on a new 94k+ QA pair benchmark.
-                        Integrates RAG with LLaVA for knowledge-grounded ad understanding. Published at WACV 2025.
-                    </p>
-                    <div class="tech-stack">
-                        <span>VLM</span><span>RAG</span><span>LLaVA</span>
-                    </div>
-                </div>
-
-                <div class="project-card glass-card">
-                    <div class="project-img-wrapper">
-                        <img src="https://placehold.co/400x180/0f172a/38bdf8?text=LIFT-Net+%E2%80%A2+Action+Recognition"
-                            alt="LIFT-Net">
-                    </div>
-                    <div class="project-header" style="margin-top: 1rem;">
-                        <i class="far fa-file-alt folder-icon" style="color: #38bdf8;"></i>
-                        <div class="project-links">
-                            <a href="./LIFT_Net.pdf" target="_blank" aria-label="Paper Link"><i
-                                    class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <h4 class="project-title">LIFT-Net</h4>
-                    <p class="project-desc">
-                        A dual-pathway transformer attending to raw RGB and illumination-corrected frames for
-                        light-invariant action recognition. Achieved SOTA on HMDB51, UCF101, ARID, and InfAR.
-                    </p>
-                    <div class="tech-stack">
-                        <span>Transformers</span><span>Action Recognition</span><span>Multi-modal</span>
-                    </div>
-                </div>
-
-                <div class="project-card glass-card">
+                <a class="project-card glass-card" href="https://github.com/Atharva-Chandak/eYRC_Vitarana_Drone"
+                    target="_blank" rel="noopener">
                     <div class="project-img-wrapper">
                         <img src="./assets/img/project-eyrc.png" alt="Drone Delivery">
                     </div>
                     <div class="project-header" style="margin-top: 1.5rem;">
                         <i class="far fa-folder-open folder-icon"></i>
-                        <div class="project-links">
-                            <a href="https://github.com/Atharva-Chandak/eYRC_Vitarana_Drone" target="_blank"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
+                        <span class="project-links"><i class="fab fa-github"></i></span>
                     </div>
                     <h4 class="project-title">Drone for Parcel Delivery</h4>
                     <p class="project-desc">
-                        Optimized UAV navigation, control systems, and QR-based detection in a simulated environment,
-                        improving delivery success rates and accuracy. Top 5 in E-Yantra Competition.
+                        A simulated delivery drone for IIT Bombay's E-Yantra competition. I worked on its navigation
+                        and control and on QR-based detection to find drop points. We finished in the top 5.
                     </p>
                     <div class="tech-stack">
                         <span>ROS</span><span>OpenCV</span><span>Control Systems</span>
                     </div>
-                </div>
+                </a>
 
                 <div class="project-card glass-card">
                     <div class="project-img-wrapper">
@@ -394,14 +393,11 @@
                     </div>
                     <div class="project-header" style="margin-top: 1.5rem;">
                         <i class="far fa-folder-open folder-icon"></i>
-                        <div class="project-links">
-                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
                     </div>
                     <h4 class="project-title">Image Super Resolution</h4>
                     <p class="project-desc">
-                        A GAN based model to convert low resolution images to high resolution. Read and implemented
-                        various Deep Learning algorithms like SRGAN & ESRGAN.
+                        Turning low-resolution images into sharp ones with GANs. I read the SRGAN and ESRGAN papers
+                        and implemented both.
                     </p>
                     <div class="tech-stack">
                         <span>PyTorch</span><span>GANs</span><span>Computer Vision</span>
@@ -437,6 +433,8 @@
                         <span><i class="devicon-tensorflow-original colored"></i> TensorFlow</span>
                         <span><i class="devicon-numpy-plain colored"></i> NumPy</span>
                         <span><i class="devicon-pandas-plain colored"></i> Pandas</span>
+                        <span>⚡ vLLM</span>
+                        <span>🔎 FAISS</span>
                     </div>
                 </div>
                 <div class="skill-category glass-card">
@@ -460,6 +458,8 @@
                         <span><i class="devicon-jenkins-line colored"></i> Jenkins</span>
                         <span><i class="devicon-apachekafka-original colored"></i> Kafka</span>
                         <span><i class="devicon-mongodb-plain colored"></i> MongoDB</span>
+                        <span><i class="devicon-linux-plain colored"></i> Linux</span>
+                        <span>🟩 Triton</span>
                         <span><i class="devicon-mysql-plain colored"></i> MySQL</span>
                     </div>
                 </div>
@@ -475,14 +475,12 @@
                         Prosperity 2, a global algorithmic trading competition by IMC Trading.</li>
                     <li><i class="fas fa-trophy highlight-icon"></i> <strong>3rd Place</strong> in AI RoboSoccer
                         Competition (148 teams) using PPO-based RL agents.</li>
-                    <li><i class="fas fa-medal highlight-icon"></i> Ranked 598 &amp; 2449 out of 1.23M in JEE Main &amp;
-                        Advanced.</li>
+                    <li><i class="fas fa-medal highlight-icon"></i> Ranked 598 and 2449 out of 1.23 million students in
+                        JEE Main and Advanced.</li>
                     <li><i class="fas fa-robot highlight-icon"></i> <strong>Top 5</strong> in IIT Bombay's E-Yantra
                         Robotics Competition.</li>
                 </ul>
             </div>
-        </section>
-
         </section>
 
         <footer class="footer">
